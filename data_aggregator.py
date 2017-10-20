@@ -21,6 +21,9 @@ def insert_into_db(pos_x, pos_y):
     cursor.execute(query, data)
     con_db.commit()
 
+    cursor.close()
+    con_db.close()
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description = 'Inserts field data into a sqlite db.')
     parser.add_argument('pos_x', metavar = 'field_x')
