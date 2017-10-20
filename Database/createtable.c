@@ -32,8 +32,8 @@ int main(int argc, char *argv[]){
   sql= "CREATE TABLE WATERTB("\
        "ID INT PRIMARY KEY         NOT NULL,"\
        "TIME           TIMESTAMP   NOT NULL,"\
-       "PRESSURE       INT         NOT NULL,"\
-       "TEMPERATURE    INT         NOT NULL,"\
+       "PRESSURE       REAL        NOT NULL,"\
+       "TEMPERATURE    REAL        NOT NULL,"\
        "POSX           INT         NOT NULL,"\
        "POSY           INT         NOT NULL);";
 
